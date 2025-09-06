@@ -51,6 +51,8 @@
   let images = window.innerWidth <= 768 ? mobileImages : desktopImages;
   let index = 0;
 
+         document.getElementById("slideshow").src = images[index];
+
   setInterval(() => {
     index = (index + 1) % images.length;
     document.getElementById("slideshow").src = images[index];
@@ -75,4 +77,5 @@
 
 
 </body>
+
 </html>
