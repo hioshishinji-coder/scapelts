@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scapelts</title>
+    <link rel="website icon" type="'jpg"
+    href="img/7.png">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="dd">
+        <div class="aa">
+        <a href="#" class="login-btn"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M5 20V19C5 15.134 8.13401 12 12 12V12C15.866 12 19 15.134 19 19V20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+
+
+             <div class="lang-toggle">
+  <input type="checkbox" id="langSwitch">
+  <label for="langSwitch" class="switch">
+    <span class="lang en">EN</span>
+    <span class="lang th">TH</span>
+    <span class="slider"></span>
+  </label>
+</div>
+
+
+        </div>
+        <div class="gg">
+            <a href="#"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 17L21 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            <a href="#"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M19.2609 9.69589L20.6455 18.6959C20.8319 19.9074 19.8945 21 18.6688 21H5.33122C4.10545 21 3.16809 19.9074 3.35448 18.6959L4.73909 9.69589C4.8892 8.72022 5.7287 8 6.71584 8H17.2842C18.2713 8 19.1108 8.72022 19.2609 9.69589Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            <a href="#"><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        </div>
+  </div> 
+  <img src="img/7.png" alt="img/7.png" class="ll">
+
+  <nav> 
+    <ul class="menu"> 
+        <li><a href="#" data-i18n="shop">SHOP</a></li> 
+        <li><a href="#" data-i18n="news">NEWS</a></li> 
+        <li><a href="#" data-i18n="about">ABOUT</a></li> 
+    </ul> 
+  </nav>
+
+
+    <img id="slideshow" src="img/1.jpg" alt="img/1.jpg">
+
+    <script>
+  const desktopImages = ["img/1.jpg", "img/4.jpg", "img/3.jpg"];
+  const mobileImages  = ["img/11.jpg", "img/12.jpg", "img/13.jpg"];
+
+  let images = window.innerWidth <= 768 ? mobileImages : desktopImages;
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    document.getElementById("slideshow").src = images[index];
+  }, 3000);
+</script>
+
+
+<style>
+  #slideshow {
+    max-width: 100%;   
+    height: auto;      
+    display: block;    
+    margin: 0 auto;    
+  }
+</style>
+
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
