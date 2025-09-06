@@ -1,0 +1,126 @@
+.dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ll {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+.menu  {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu li {
+    margin: 0 -200px auto;
+}
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none; /* ซ่อนเมนูในมือถือ */
+  }
+
+  /* ทำให้รูป slideshow ขยับขึ้นติดกับรูปข้างบน */
+  #slideshow {
+    margin-top: 0;
+  }
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background: #f7fbff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Toggle */
+.lang-toggle {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  background: #eee;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Prompt", sans-serif;
+}
+
+.switch .lang {
+  flex: 1;
+  text-align: center;
+  z-index: 2;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.switch .slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border-radius: 25px;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+#langSwitch {
+  display: none;
+}
+
+#langSwitch:checked + .switch .slider {
+  left: 50%;
+}
+
+#langSwitch:checked + .switch .en {
+  color: #000;
+}
+#langSwitch:checked + .switch .th {
+  color: #fff;
+}
+
+#langSwitch:not(:checked) + .switch .en {
+  color: #fff;
+}
+#langSwitch:not(:checked) + .switch .th {
+  color: #000;
+}
+
+/* เมนู */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
