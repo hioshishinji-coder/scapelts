@@ -45,6 +45,7 @@
   /* ทำให้รูป slideshow ขยับขึ้นติดกับรูปข้างบน */
   #slideshow {
     margin-top: 0;
+    width: auto;
     height: 60vh;      /* สูง 60% ของความสูงหน้าจอมือถือ */
     object-fit: cover; 
   }
@@ -142,5 +143,6 @@ body {
   font-weight: bold;
   color: #333;
 }
+
 
 
